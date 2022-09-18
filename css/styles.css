@@ -179,15 +179,11 @@ header .contacts > li:not(:first-child) {
   margin: 0 auto;
   background-color: var(--hero-bgc);
 }
-.contact:hover > .logo-cont > svg,
-.contact:focus > .logo-cont > svg {
-  fill: var(--link-color);
-}
 .logo-cont > svg {
   width: 16px;
   height: 12px;
   justify-content: center;
-  fill: var(--contact-color);
+  fill: currentColor;
 }
 .hero-header {
   display: block;
