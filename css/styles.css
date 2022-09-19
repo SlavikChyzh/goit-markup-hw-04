@@ -179,12 +179,19 @@ header .contacts > li:not(:first-child) {
   margin: 0 auto;
   background-color: var(--hero-bgc);
 }
-.logo-cont > svg {
+.mail .logo-cont svg {
   width: 16px;
   height: 12px;
-  justify-content: center;
+  justify-content: baseline;
   fill: currentColor;
 }
+.tell .logo-cont svg {
+  width: 10px;
+  height: 16px;
+  justify-content: baseline;
+  fill: currentColor;
+}
+
 .hero-header {
   display: block;
   max-width: 730px;
@@ -263,6 +270,7 @@ header .contacts > li:not(:first-child) {
 }
 .advantage-svg {
   width: 70px;
+  height: 70px;
   fill: var(--main-color, --logo-color);
 }
 .advantage:not(:first-child) {
@@ -318,7 +326,7 @@ header .contacts > li:not(:first-child) {
   border-radius: 0px 0px 4px 4px;
 }
 .team-frame {
-  padding: 20px 24px;
+  padding: 30px;
 }
 
 .position-on-team {
@@ -333,10 +341,15 @@ header .contacts > li:not(:first-child) {
 .team-cont .social-item svg {
   fill: var(--logo-color);
 }
+.social-item:hover > a > svg,
+.social-item :focus > a > svg {
+  fill: var(--footer-color);
+}
 
 .team-cont .social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
 }
 .customers-list {
   display: flex;
@@ -355,7 +368,7 @@ header .contacts > li:not(:first-child) {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-  border: 2px solid var(--logo-color);
+  border: 1px solid var(--logo-color);
 }
 .customer-link:hover,
 .customer-link :focus {
